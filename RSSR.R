@@ -15,4 +15,10 @@ count(cd247seq,7)
 cd247table<-count(cd247seq,7)
 #give number of results for "cactcta"
 cd247table[["cactcta"]]
+cd247table[["tactgtg"]]
+
+library(Biostrings)
+vighmotif<-DNAStringSet(c("cacagct","cacaatg","cacagtg"))
+
+matchPDict(vighmotif, cd247seq)
 
